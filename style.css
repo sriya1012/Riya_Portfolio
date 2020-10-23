@@ -14,9 +14,6 @@ body{
     float: left;
     /*margin: 40px;*/
     color: white;
-    position: sticky;
-    top: 0;
-    bottom: 0;
 }
 #image button{
     float: right;
@@ -28,10 +25,10 @@ body{
     padding: 10px 50px;
 }
 #image h1{
-    text-align: center;
-    position: relative;
-    top: 200px;
-    left: 90px;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    width: auto;
     font-size: 70px;
     font-family: normal normal normal 88px/1.4em avenir-lt-w01_85-heavy1475544,sans-serif;
     font-weight: bold;
@@ -39,9 +36,9 @@ body{
 }
 #image p{
     text-align: center;
-    position: relative;
-    top: 200px;
-    left: 80px;
+    position: absolute;
+    top: 230px;
+    left: 600px;
     font-size: 22px;
     color: #93A2B9;
     letter-spacing: 4px;
@@ -49,7 +46,7 @@ body{
 }
 .myPic{
     position: relative;
-    top: 300px;
+    top: 450px;
     left: 650px;
     height: 250px;
     border-radius: 50%;
@@ -60,7 +57,7 @@ body{
 .slideshow-container {
   position: relative;
    background-color: aliceblue;
-    height: 550px;
+    height: 600px;
 }
 
 /* Slides */
@@ -68,7 +65,7 @@ body{
   display: none;
   padding: 80px;
   text-align: justify;
-   
+   height: 600px;
 }
 .mySlides h1{
     color: indigo;
@@ -80,9 +77,6 @@ body{
     margin-top: 60px;
     font-size: 20px;
     font-family: 'Schoolbell', cursive;
-}
-#mySlides1 h1 i{
-    color: black;
 }
 
 /* Next & previous buttons */
@@ -144,25 +138,44 @@ color: white;
     padding-left: 10px;
     color: white;
 }
+#mySlides1{
+    background-color: lavenderblush;
+}
+#mySlides2{
+    background-color: #DAF0D5;
+}
+#mySlides3{
+    background-color: white;
+}
 #mySlides3 .btn{
     height: 150px;
     width: 150px;
-    border: 1px solid grey;
+    border: 1px solid;
     border-radius: 50%;
-    margin-left: 70px;
     margin-top: 50px;
-    background-color: lightpink;
+    background-color: #E85E75;
+}
+#mySlides2 h2{
+    margin-top: 50px;
+    color: #001F3D;
+    font-weight: bold; 
+    font-size: 20px;
+}
+#mySlides2 p{
+    margin-top: 0px;
+    color: #E85E75;
 }
 #mySlides3 i{
     font-size: 50px;
     padding-left: 0px;
-    color: cadetblue;
+    color: #022546;
 }
 #mySlides3 p{
     margin-top: 0px;
     font-size: 25px;
     color: steelblue;
     font-weight: bold;
+    text-align: center;
 }
 #skills{
    color: white;
@@ -190,7 +203,6 @@ color: white;
 .column {
   float: left;
   width: 50%;
-  padding: 10px;
 
   height: 400px; /* Should be removed. Only for demonstration */
 }
@@ -215,12 +227,16 @@ color: white;
     width: 75%;
     padding: 20px;
     background-color: #3D1053;
+    margin-top: 65px;
 }
 #border a{
     color: white;
 }
 #column2{
     background-color: #C8477C;
+}
+#column2 a{
+    text-decoration: none;
 }
 
 #button{
@@ -315,4 +331,10 @@ color: white;
 }
 .footer p{
     margin: 0;
+}
+@media only screen and (max-width: 768px){
+    .slideshow-container {
+        clas
+    }
+    
 }
