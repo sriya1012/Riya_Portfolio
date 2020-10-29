@@ -11,7 +11,7 @@ body{
 }
 #image a{
     float: left;
-    /*margin: 40px;*/
+    padding: 10px 50px;
     color: white;
 }
 #image button{
@@ -21,31 +21,38 @@ body{
     color: white;
     cursor: pointer;
     border: 1px solid white;
-    padding: 10px 50px;
+    padding: 2px 40px;
 }
 #image h1{
    position: absolute;
     top: 160px;
-    left: 560px; 
+    left: 50%; 
+    transform: translate(-50%);
     width: auto;
     font-size: 70px;
     font-weight: bold;
     color: white;
 }
 #image p{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    width: auto;
+    margin-top: 0px;
     position: absolute;
     top: 240px;
-    left:610px;
+    left:50%;  
+    transform: translate(-50%);
     font-size: 22px;
     color: #93A2B9;
     letter-spacing: 4px;
 }
-
 .myPic{
     position: absolute;
     top: 450px;
-    left: 640px;
+    left: 50%;
+    transform: translate(-50%);
     height: 250px;
     border-radius: 50%;
     border: 8px solid white;
@@ -83,12 +90,12 @@ body{
   width: auto;
   margin-top: -30px;
   padding: 16px;
-  color: pink;
+  color: azure;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-    background-color: lightgrey;
+    background-color:gainsboro;
 }
 
 /* Position the "next button" to the right */
@@ -100,7 +107,7 @@ body{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: white;
+  background-color: gainsboro;
   color: black;
 }
 
@@ -117,7 +124,7 @@ body{
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: lightgrey;
+  background-color: #717171;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -125,7 +132,7 @@ body{
 
 /* Add a background color to the active dot/circle */
 .active, .dot:hover {
-  background-color: #717171;
+  background-color:lightgrey  ;
 }
 .btn{
 margin-left: 20px;
@@ -234,14 +241,23 @@ color: white;
     margin: 55px auto;
     width: 75%;
     padding: 20px;
-    background-color: #050F27/*#3D1053 */;
+    background-color:#A41655 /*#050F27#3D1053 */;
+    /*box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12);*/
+/*
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),0px 24px 38px 3px rgba(0, 0, 0, 0.14),0px 9px 46px 8px rgba(0, 0, 0, 0.12);
     margin-top: 65px;
+*/
+    
+}
+#border:hover{
+/*    box-shadow: 64px 64px 24px 40px rgba(0,0,0,0.4),12px 12px 0px 18px rgba(0,0,0,0.4) inset;*/
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 #border a{
     color: white;
 }
 #column2{
-    background-color:#A41655  /*#FC5E28 #C8477C*/;
+    background-color:#050F27  /*#FC5E28 #C8477C*/;
 }
 #column2 a{
     text-decoration: none;
@@ -254,7 +270,7 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: /*#031321 #1B728B*/#115262 ;
+    background: #050F27 /*#031321*/ ;
 }
 
 #button a{
